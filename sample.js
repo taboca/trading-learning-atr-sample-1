@@ -1,4 +1,10 @@
 
+/* Good explaination
+
+   https://www.youtube.com/watch?v=jjsje1E3hVM
+   
+*/
+
 // The following annotation, type, is not needed. 
 
 let candles = [ 
@@ -34,7 +40,7 @@ let candles = [
 
 /* Calculating TR */ 
 
-function calculateTrs(candles, i) { 
+function calculateBestTrs(candles, i) { 
 
   let currentCandle = candles[i];
   let previousCandle = candles[i-1];
@@ -52,6 +58,15 @@ function calculateTrs(candles, i) {
   
 }
 
-let trBest = calculateTrs(candles, 1);
+// For 3 days, starting with day 0 + 1 
 
-console.log(`Best true range for ${1} is: ${trBest}`);
+let tr1 = calculateBestTrs(candles, 1);
+console.log(`Best true range for ${1} is: ${tr1}`);
+
+let tr2 = calculateBestTrs(candles, 2);
+console.log(`Best true range for ${2} is: ${tr2}`);
+
+let tr3 = calculateBestTrs(candles, 3);
+console.log(`Best true range for ${3} is: ${tr3}`);
+
+console.log(`Average: ${((tr1+tr2+tr3)/3)}`);
