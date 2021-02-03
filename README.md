@@ -1,6 +1,6 @@
 ## Introduction 
 
-In this sample, we are going to calculate the ATR, average true range, relative to data from 3 candles. Since the calculation for a given True Range needs to use the prior candle closing price, then our array will have 3 candle data:    
+In this sample, we are going to calculate the ATR, average true range, relative to data from 3 candles. Since the calculation for a given True Range needs to use the prior candle closing price, then our array will have 3+1 candles:    
 
 ```
 // The following annotation, type, is not needed. 
