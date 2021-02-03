@@ -40,7 +40,7 @@ let candles = [
 
 ## Calculating TR 
 
-I have found that this video, [How To Calculate Average True Range (ATR)], offered a great explanation on why the last candle data, closing price, needs to be used. 
+I have found that this video, [How To Calculate Average True Range (ATR)](https://www.youtube.com/watch?v=jjsje1E3hVM), offered a great explanation on why the last candle data, closing price, needs to be used. 
 
 ```
 
